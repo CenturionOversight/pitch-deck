@@ -3,7 +3,6 @@ const fallback = document.getElementById('pdfFallback');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const presentBtn = document.getElementById('presentBtn');
-const pdfUrl = 'downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf';
 
 function changePage(delta) {
   const currentUrl = new URL(pdf.src, window.location.href);
@@ -13,15 +12,8 @@ function changePage(delta) {
   pdf.src = currentUrl.toString();
 }
 
-pdf.addEventListener('load', () => {
-  // PDF viewer load events also fire when the browser cannot render PDFs,
-  // so the direct PDF link remains available as the universal fallback.
-  fallback.hidden = false;
-  fallback.classList.add('is-hint');
-});
 pdf.addEventListener('error', () => {
   fallback.hidden = false;
-  fallback.classList.remove('is-hint');
 });
 prevBtn.addEventListener('click', () => changePage(-1));
 nextBtn.addEventListener('click', () => changePage(1));
