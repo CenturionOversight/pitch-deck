@@ -3,53 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="VOLSHI investor deck: clear infrastructure for autonomous intelligence." />
+  <meta name="description" content="Choose the VOLSHI Caveman or Generic investor pitch deck." />
   <meta name="theme-color" content="#08090b" />
-  <title>VOLSHI | Investor Deck</title>
+  <title>VOLSHI | Investor Decks</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="https://www.volshi.com/" aria-label="VOLSHI home">
       <span class="mark">VOLSHI</span>
-      <span class="sub">Investor Deck</span>
+      <span class="sub">Investor Decks</span>
     </a>
-    <nav class="actions" aria-label="Deck controls">
-      <a href="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf" download>Download PDF</a>
-      <button id="presentBtn" type="button" aria-label="Toggle full-screen presentation">Present</button>
+    <nav class="actions" aria-label="Deck actions">
+      <a id="downloadLink" href="#" download hidden>Download this deck</a>
+      <button id="backBtn" type="button" hidden>Choose another deck</button>
     </nav>
   </header>
 
   <main class="deck-shell">
-    <section class="viewer" aria-label="Pitch deck viewer">
-      <button class="nav prev" id="prevBtn" type="button" aria-label="Previous page">‹</button>
-      <div class="slide-frame">
-        <iframe id="deckPdf"
-          title="VOLSHI investor pitch deck"
-          src="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf#toolbar=0&navpanes=0&view=FitH"
-          loading="eager"></iframe>
-        <p class="fallback" id="pdfFallback" hidden>
-          The embedded PDF could not be displayed.
-          <a href="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf">Open the investor deck PDF</a>.
-        </p>
+    <section class="chooser" id="chooser" aria-labelledby="pageTitle">
+      <p class="eyebrow">VOLSHI · AUTONOMOUS INTELLIGENCE</p>
+      <h1 id="pageTitle">Choose a pitch deck</h1>
+      <p class="intro">Two versions of the VOLSHI investor presentation.</p>
+      <div class="deck-options">
+        <button class="deck-option" type="button"
+          data-title="Caveman Pitch Deck"
+          data-file="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf">
+          <span class="option-label">01 / CAVEMAN</span>
+          <span class="option-title">Caveman Pitch Deck</span>
+          <span class="option-description">The existing short, direct presentation.</span>
+          <span class="option-action">Open deck →</span>
+        </button>
+        <button class="deck-option" type="button"
+          data-title="Generic Investor Deck"
+          data-file="downloads/VOLSHI_Generic_White_Paper_Investor_Deck.pdf">
+          <span class="option-label">02 / GENERIC</span>
+          <span class="option-title">Generic Investor Deck</span>
+          <span class="option-description">A white-paper-style overview of the problem, system, status, and business model.</span>
+          <span class="option-action">Open deck →</span>
+        </button>
       </div>
-      <button class="nav next" id="nextBtn" type="button" aria-label="Next page">›</button>
     </section>
 
-    <section class="meta" aria-label="Deck information">
-      <div>
-        <p class="eyebrow">VOLSHI · AUTONOMOUS INTELLIGENCE</p>
-        <h1>Clear infrastructure for autonomous intelligence.</h1>
+    <section class="deck-view" id="deckView" aria-label="Selected pitch deck" hidden>
+      <div class="viewer">
+        <button class="nav prev" id="prevBtn" type="button" aria-label="Previous page">‹</button>
+        <div class="slide-frame">
+          <iframe id="deckPdf" title="VOLSHI investor pitch deck" loading="eager"></iframe>
+          <p class="fallback" id="pdfFallback" hidden>
+            The PDF could not be displayed here.
+            <a id="fallbackLink" href="#">Open the deck PDF</a>.
+          </p>
+        </div>
+        <button class="nav next" id="nextBtn" type="button" aria-label="Next page">›</button>
       </div>
-      <p class="page-help">Use the PDF controls, arrow keys, or the page buttons.</p>
+      <section class="meta">
+        <div>
+          <p class="eyebrow">VOLSHI · AUTONOMOUS INTELLIGENCE</p>
+          <h2 id="deckTitle">Pitch Deck</h2>
+        </div>
+        <button id="presentBtn" type="button">Present full screen</button>
+      </section>
     </section>
   </main>
 
   <footer class="footer">
-    <span>Keyboard: ← / →, Page Up / Page Down</span>
+    <span>PDF viewer: arrow keys or page buttons to navigate</span>
     <a href="https://www.volshi.com/">volshi.com</a>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
