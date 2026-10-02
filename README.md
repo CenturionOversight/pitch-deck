@@ -1,27 +1,21 @@
-# ARCHE Pre-Seed Pitch Deck
+# VOLSHI Investor Deck
 
-Investor-facing pitch deck site for **ARCHE** and **CONTROL TOWER**.
+Investor-facing deck viewer for **VOLSHI**, focused on clear infrastructure for autonomous intelligence.
 
-## Overview
+## Contents
 
-**ARCHE** builds behavioral infrastructure for AI systems.
+- `index.html`, `styles.css`, and `script.js`: static PDF viewer with keyboard and page navigation.
+- `downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf`: current investor deck.
+- `assets/AI-Agents-Control-Tower-compressed.pdf`: supporting Control Tower deck.
 
-**CONTROL TOWER** is a mobile-first B2B SaaS control system for trust-based autonomy, designed to help teams prevent agentic operational loss before autonomous AI actions reach the business.
-
-This repository hosts the static web version of the ARCHE pre-seed pitch deck.
-
-## Status
-
-- **CONTROL TOWER:** alpha-ready
-- **Raise:** $500K pre-seed
-- **Purpose:** move CONTROL TOWER from alpha-ready into beta/release, secure design partners, protect core IP, and build the foundation for scale.
+The viewer uses the PDF file stored in `downloads/`; it does not depend on generated slide images or a separate PowerPoint file.
 
 ## Deployment
 
-This site is designed to run on GitHub Pages from the repository root.
+The site can be deployed from the repository root using GitHub Pages:
 
 ```text
-Settings -> Pages -> Deploy from branch -> main -> /root
+Settings → Pages → Deploy from a branch → main → / (root)
 ```
 
 ## Confidentiality
