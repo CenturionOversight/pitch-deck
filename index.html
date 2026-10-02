@@ -3,72 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ARCHE Pre-Seed Pitch Deck - CONTROL TOWER, trust-based autonomy, and agentic operational loss." />
-  <title>ARCHE Pre-Seed Pitch Deck</title>
+  <meta name="description" content="VOLSHI investor deck: clear infrastructure for autonomous intelligence." />
+  <meta name="theme-color" content="#08090b" />
+  <title>VOLSHI | Investor Deck</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">
-      <span class="mark">ARCHE</span>
-      <span class="sub">Pre-Seed Pitch Deck</span>
-    </div>
+    <a class="brand" href="https://www.volshi.com/" aria-label="VOLSHI home">
+      <span class="mark">VOLSHI</span>
+      <span class="sub">Investor Deck</span>
+    </a>
     <nav class="actions" aria-label="Deck controls">
-      <a href="downloads/ARCHE_PreSeed_v4.pptx" download>Download PPTX</a>
-      <a href="downloads/AI-Agents-Control-Tower-compressed.pdf" download>Download Investor Deck PDF</a>
-      <button id="presentBtn" type="button">Present</button>
+      <a href="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf" download>Download PDF</a>
+      <button id="presentBtn" type="button" aria-label="Toggle full-screen presentation">Present</button>
     </nav>
   </header>
 
   <main class="deck-shell">
-    <section class="viewer" aria-label="Slide viewer">
-      <button class="nav prev" id="prevBtn" type="button" aria-label="Previous slide">‹</button>
-      <figure class="slide-frame">
-        <img id="slideImg" src="assets/slides/slide-01.png" alt="Slide 1: Title" />
-      </figure>
-      <button class="nav next" id="nextBtn" type="button" aria-label="Next slide">›</button>
-    </section>
-
-    <section class="meta" aria-label="Slide information">
-      <div>
-        <p class="eyebrow">ARCHEPERSONA | Confidential Pre-Seed Deck</p>
-        <h1 id="slideTitle">Title</h1>
+    <section class="viewer" aria-label="Pitch deck viewer">
+      <button class="nav prev" id="prevBtn" type="button" aria-label="Previous page">‹</button>
+      <div class="slide-frame">
+        <iframe id="deckPdf"
+          title="VOLSHI investor pitch deck"
+          src="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf#toolbar=0&navpanes=0&view=FitH"
+          loading="eager"></iframe>
+        <p class="fallback" id="pdfFallback" hidden>
+          The embedded PDF could not be displayed.
+          <a href="downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf">Open the investor deck PDF</a>.
+        </p>
       </div>
-      <div class="counter"><span id="currentSlide">01</span>/<span id="totalSlides">21</span></div>
+      <button class="nav next" id="nextBtn" type="button" aria-label="Next page">›</button>
     </section>
 
-    <section class="filmstrip" id="filmstrip" aria-label="Slide thumbnails"></section>
+    <section class="meta" aria-label="Deck information">
+      <div>
+        <p class="eyebrow">VOLSHI · AUTONOMOUS INTELLIGENCE</p>
+        <h1>Clear infrastructure for autonomous intelligence.</h1>
+      </div>
+      <p class="page-help">Use the PDF controls, arrow keys, or the page buttons.</p>
+    </section>
   </main>
 
   <footer class="footer">
-    <span>Keyboard: ← / →, space, Home, End</span>
+    <span>Keyboard: ← / →, Page Up / Page Down</span>
+    <a href="https://www.volshi.com/">volshi.com</a>
   </footer>
 
-  <script>
-  window.ARCHE_SLIDES = [
-    {src:"assets/slides/slide-01.png", title:'Title'},
-    {src:"assets/slides/slide-02.png", title:'Problem'},
-    {src:"assets/slides/slide-03.png", title:'Why Now: Agents'},
-    {src:"assets/slides/slide-04.png", title:'Why Now: Risk'},
-    {src:"assets/slides/slide-05.png", title:'Solution'},
-    {src:"assets/slides/slide-06.png", title:'Product Workflow'},
-    {src:"assets/slides/slide-07.png", title:'Platform'},
-    {src:"assets/slides/slide-08.png", title:'Go-to-market'},
-    {src:"assets/slides/slide-09.png", title:'Market'},
-    {src:"assets/slides/slide-10.png", title:'Business Model'},
-    {src:"assets/slides/slide-11.png", title:'Financials'},
-    {src:"assets/slides/slide-12.png", title:'Competition'},
-    {src:"assets/slides/slide-13.png", title:'Traction / Proof'},
-    {src:"assets/slides/slide-14.png", title:'Founder / Team'},
-    {src:"assets/slides/slide-15.png", title:'Roadmap'},
-    {src:"assets/slides/slide-16.png", title:'Use of Funds'},
-    {src:"assets/slides/slide-17.png", title:'Close'},
-    {src:"assets/slides/slide-18.png", title:'Backup: Market Expansion'},
-    {src:"assets/slides/slide-19.png", title:'Backup: ARCHEngine'},
-    {src:"assets/slides/slide-20.png", title:'Backup: Risk Evidence'},
-    {src:"assets/slides/slide-21.png", title:'Backup: Competition'}
-  ];
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
