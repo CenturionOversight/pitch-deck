@@ -1,22 +1,17 @@
-# VOLSHI Investor Deck
+# VOLSHI Investor Decks
 
-Investor-facing deck viewer for **VOLSHI**, focused on clear infrastructure for autonomous intelligence.
+A static deck chooser for the VOLSHI investor presentation.
 
-## Contents
+## Decks
 
-- `index.html`, `styles.css`, and `script.js`: static PDF viewer with keyboard and page navigation.
-- `downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf`: current investor deck.
-- `assets/AI-Agents-Control-Tower-compressed.pdf`: supporting Control Tower deck.
+- **Caveman Pitch Deck:** `downloads/VOLSHI_ARCHETRON_Caveman_Pitch_Deck_v2(1).pdf`
+- **Generic Investor Deck:** `downloads/VOLSHI_Generic_White_Paper_Investor_Deck.pdf`
 
-The viewer uses the PDF file stored in `downloads/`; it does not depend on generated slide images or a separate PowerPoint file.
+Open the site to choose a version. The selected PDF displays in the page and can also be downloaded. The generic version is an eight-page, white-paper-style overview; it avoids unverified market-size, revenue, and customer claims.
 
 ## Deployment
 
-The site can be deployed from the repository root using GitHub Pages:
-
-```text
-Settings → Pages → Deploy from a branch → main → / (root)
-```
+Configure GitHub Pages to deploy from `main` at the repository root.
 
 ## Confidentiality
 
